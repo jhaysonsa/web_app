@@ -15,5 +15,10 @@ namespace mywebapp.Controllers
             var movie = new Movie() { Name = "Shrek!" };
             return View(movie);
         }
+        public ActionResult edit(int id)
+        {
+            return Content("id=" + id);
+        }
+
     }
 }

@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using mywebapp.Models;
 
+
+
 namespace mywebapp.Controllers
 {
     public class MoviesController : Controller
@@ -15,9 +17,9 @@ namespace mywebapp.Controllers
             var movie = new Movie() { Name = "Shrek!" };
             return View(movie);
         }
-        public ActionResult edit(int id)
+        public ActionResult Edit(int id)
         {
-            return Content("id=" + id);
+            return Content("id=" + id); 
         }
 
     }
